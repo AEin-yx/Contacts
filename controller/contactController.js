@@ -11,7 +11,8 @@ const getContact=(req,res)=>{
 //@access public
 
 const createContact=(req,res)=>{
-    res.status(200).json({ message:"Created a new Contact"})
+    console.log("The req body is",req.body);
+    res.status(200).json({ message:"Created a new Contact"});
 };
 
 //@desc update contact with id
